@@ -1,0 +1,8 @@
+{
+  "name": "coffres-et-creneaux",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Coffres & Créneaux — multijoueur asynchrone sur Cloudflare Pages + D1",
+  "scripts": { "test": "node --no-warnings tests/api.test.mjs && node --no-warnings tests/concurrency.test.mjs" }
+}
