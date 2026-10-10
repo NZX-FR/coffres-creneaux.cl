@@ -1,0 +1,19 @@
+{
+  // Configuration Cloudflare Worker de Coffres & Créneaux
+  "name": "coffres-creneaux",
+  "main": "worker.mjs",
+  "compatibility_date": "2025-06-01",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "coffres-creneaux",
+      // ⚠️ Remplace la valeur ci-dessous par le « Database ID » affiché sur la page de ta base D1
+      "database_id": "COLLE-ICI-L-ID-DE-TA-BASE-D1"
+    }
+  ]
+}
